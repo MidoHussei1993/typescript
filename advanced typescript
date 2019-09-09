@@ -1,0 +1,69 @@
+building blocks
+NOTE : TYPE LIKE INTERFACE BUT WE BREFARE TO USE IT LIKE THAT
+itersection types
+
+type duck = quackable & swimmable ;
+
+for exsample :_
+
+interface HasName{
+firstName : string;
+lastName : string;
+}
+interface HasAddress {
+address : string;
+}
+
+
+type player= HasName & HasAddress // compination of this is tow type
+
+type player= (HasName & HasAddress) | null // this is mean this variable is componation of this to type or null
+
+const ali : player ={firstName : "ali" , lastName : "mido" , address :"10th of ramadan " }
+=======================================================================================================
+Union Types 
+
+type flyable = Eagle | Butterfly
+
+
+================================================================
+Type Assertions
+First way : -
+cast it like string
+const input : htmlInputElement =<htmlInputElement> document.getElementById("myinput");
+
+socend way :
+const input : htmlInputElement = document.getElementById("myinput") as htmlInputElement;
+===============================================================
+Literal Type :
+we can use invidale value as type
+
+type move = 'rock' |'paper' | 'scissor'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
